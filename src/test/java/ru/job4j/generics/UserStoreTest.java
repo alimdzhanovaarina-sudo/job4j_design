@@ -2,17 +2,17 @@ package ru.job4j.generic;
 
 import static org.assertj.core.api.Assertions.*;
 import org.junit.jupiter.api.Test;
-import ru.job4j.generic.UserStore;
-import ru.job4j.generic.User;
-import ru.job4j.generic.RoleStore;
-import ru.job4j.generic.Role;
+import ru.job4j.generics.UserStore;
+import ru.job4j.generics.User;
+import ru.job4j.generics.RoleStore;
+import ru.job4j.generics.Role;
 
 class UserStoreTest {
 
     @Test
     void whenAddAndFindThenUsernameIsPetr() {
         UserStore store = new UserStore();
-        store.add(new ru.job4j.generic.User("1", "Petr"));
+        store.add(new ru.job4j.generics.User("1", "Petr"));
         User result = store.findById("1");
         assertThat(result.getUsername()).isEqualTo("Petr");
     }

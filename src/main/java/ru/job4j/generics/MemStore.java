@@ -1,9 +1,9 @@
-package ru.job4j.generic;
+package ru.job4j.generics;
 
 import java.util.HashMap;
 import java.util.Map;
-import ru.job4j.generic.Base;
-import ru.job4j.generic.Store;
+import ru.job4j.generics.Base;
+import ru.job4j.generics.Store;
 
 public final class MemStore<T extends Base> implements Store<T> {
 

@@ -1,8 +1,8 @@
-package ru.job4j.generic;
+package ru.job4j.generics;
 
-import ru.job4j.generic.User;
-import ru.job4j.generic.Store;
-import ru.job4j.generic.MemStore;
+import ru.job4j.generics.User;
+import ru.job4j.generics.Store;
+import ru.job4j.generics.MemStore;
 
 public class UserStore implements Store<User> {
 

@@ -1,6 +1,6 @@
-package ru.job4j.generic;
+package ru.job4j.generics;
 
-import ru.job4j.generic.Base;
+import ru.job4j.generics.Base;
 
 public interface Store<T extends Base> {
 

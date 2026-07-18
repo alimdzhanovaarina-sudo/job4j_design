@@ -1,4 +1,4 @@
-package ru.job4j.assertj;
+package ru.job4j;
 
 import java.util.*;
 import java.util.stream.Collectors;
@@ -19,7 +19,6 @@ public class SimpleConvert {
     }
 
     public Map<String, Integer> toMap(String... example) {
-        return Stream.iterate(0, i -> i < example.length, i -> i + 1)
-                .collect(Collectors.toMap(i -> example[i], i -> i, (s1, s2) -> s1));
+        return Stream.iterate(0, i -> i < example.length, i -> i + 1).collect(Collectors.toMap(i -> example[i], i -> i, (s1, s2) -> s1));
     }
 }
